@@ -9,7 +9,7 @@ class PdfRepository {
             descricao: { type: String, required: false },
             dataCriacao: { type: Date, required: true }
         });
-        this.pdfModel = this.connection.model('pdf', this.schema);
+        this.pdfModel = this.connection.model('Pdf', this.schema);
     }
 
     insert(pdfParam) {
@@ -68,4 +68,4 @@ class PdfRepository {
     }
 }
 
-module.exports = EstablishmentRepository;
+module.exports = PdfRepository;
